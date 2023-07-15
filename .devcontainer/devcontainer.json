@@ -1,0 +1,6 @@
+{
+	"name": "mkdocs",
+	"image": "squidfunk/mkdocs-material:9"
+	// "postCreateCommand": "",
+	// "mounts": []
+}

@@ -1,0 +1,20 @@
+site_name: taokawarai
+theme:
+  name: material
+  language: ja
+  palette:
+    # Primary color
+    primary: lime
+  icon:
+    logo: material/library-shelves
+  features:
+    - navigation.tabs
+nav:
+  - Daily memo:
+    - DailyMemo/20230715.md
+  - Mind map: mindmap.md
+  - About: about.md
+plugins:
+  - search:
+      lang: ja
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
