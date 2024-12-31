@@ -1,24 +1,47 @@
-site_name: taokawarai
+site_name: Tao's Note
 theme:
   name: material
   language: ja
   palette:
-    # Primary color
-    primary: lime
-  icon:
-    logo: material/library-shelves
+    scheme: slate
+    primary: yellow
+    accent: green
   features:
-    - navigation.tabs
+    - navigation.instant
+    - search.highlight
+    - content.code.copy
 nav:
-  - Daily memo:
-    - DailyMemo/20230719.md
-    - DailyMemo/20230718.md
-    - DailyMemo/20230717.md
-    - DailyMemo/20230716.md
-    - DailyMemo/20230715.md
-  - Mind map: mindmap.md
-  - About: about.md
+  - index.md
+  # - tags.md
+  # - Daily memo:
+  #   - DailyMemo/20230719.md
+  #   - DailyMemo/20230718.md
+  #   - DailyMemo/20230717.md
+  #   - DailyMemo/20230716.md
+  #   - DailyMemo/20230715.md
+  # - Mind map: mindmap.md
+  # - About: about.md
+  - Blog:
+    - blog/index.md
 plugins:
+  - blog:
+      blog_dir: blog/.
+  # - tags:
+  #     tags_file: tags.md
   - search:
       lang: ja
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/taokawarai
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/taokawarai
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/tao.kawarai/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/taokawarai/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/taokawarai/
+  tags:
+    <tag>: <identifier>
